@@ -1,7 +1,10 @@
 import streamlit as st
 import pickle
 import numpy as np
+import sklearn
 from sklearn.preprocessing import LabelEncoder
+
+print(sklearn.__version__)
 
 pipe = pickle.load(open('pipe.pkl', 'rb'))
 df = pickle.load(open('df.pkl', 'rb'))
